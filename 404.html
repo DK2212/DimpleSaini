@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page not found — Dimple Saini</title>
+<meta name="robots" content="noindex" />
+<style>
+  :root {
+    --bg: #F8F6F1; --bg-raised: #FFFFFF;
+    --ink: #101620; --ink-muted: #5D6673;
+    --border-strong: #CEC7B8;
+    --accent: #9A6F2C; --accent-strong: #7C5720;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0E141D; --bg-raised: #161E29;
+      --ink: #EDEAE3; --ink-muted: #98A1AE;
+      --border-strong: #35404F;
+      --accent: #C79A57; --accent-strong: #DDB57B;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0E141D; --bg-raised: #161E29;
+    --ink: #EDEAE3; --ink-muted: #98A1AE;
+    --border-strong: #35404F;
+    --accent: #C79A57; --accent-strong: #DDB57B;
+  }
+  :root[data-theme="light"] {
+    --bg: #F8F6F1; --bg-raised: #FFFFFF;
+    --ink: #101620; --ink-muted: #5D6673;
+    --border-strong: #CEC7B8;
+    --accent: #9A6F2C; --accent-strong: #7C5720;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    display: grid; place-items: center;
+    padding: 2rem;
+    background: var(--bg); color: var(--ink-muted);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+    text-align: center;
+  }
+  .card { max-width: 34rem; display: flex; flex-direction: column; gap: 1rem; align-items: center; }
+  .mark {
+    width: 40px; height: 40px; display: grid; place-items: center;
+    border: 1px solid var(--accent); color: var(--accent-strong);
+    border-radius: 50%; font-family: Georgia, serif; font-weight: 700;
+  }
+  h1 { margin: 0; color: var(--ink); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.7rem, 4vw, 2.3rem); }
+  p { margin: 0; }
+  a.btn {
+    margin-top: 0.6rem;
+    display: inline-block; padding: 0.75rem 1.35rem;
+    background: var(--ink); color: var(--bg);
+    text-decoration: none; font-weight: 600; font-size: 0.88rem; border-radius: 3px;
+    transition: background 0.15s ease;
+  }
+  a.btn:hover { background: var(--accent-strong); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <span class="mark">DS</span>
+    <h1>That page doesn't exist</h1>
+    <p>The link may be outdated or mistyped. Everything lives on the main profile page.</p>
+    <a class="btn" href="/DimpleCV/">Back to profile</a>
+  </div>
+</body>
+</html>
