@@ -233,6 +233,7 @@
   }
   .h2 { font-size: clamp(1.55rem, 2.8vw, 2.05rem); margin-bottom: 0.9rem; }
   .lede { max-width: 68ch; font-size: 1.04rem; color: var(--ink-muted); }
+  .lede-wide { max-width: 76ch; }
   .lede strong { color: var(--ink); font-weight: 600; }
   .reveal { opacity: 0; transform: translateY(12px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.in { opacity: 1; transform: none; }
@@ -307,7 +308,7 @@
   .stat-label { margin-top: 0.4rem; font-size: 0.79rem; color: var(--ink-muted); }
 
   /* ===== Career highlights ===== */
-  .highlights { display: grid; grid-template-columns: 1fr; gap: 1px; margin-top: 2rem; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  .highlights { display: grid; grid-template-columns: 1fr; gap: 1px; margin-top: 2.6rem; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
   @media (min-width: 820px) { .highlights { grid-template-columns: repeat(3, 1fr); } }
   .highlights article { background: var(--bg-raised); padding: 1.25rem 1.3rem; display: flex; flex-direction: column; gap: 0.4rem; }
   .highlight-stat { font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: 1.18rem; color: var(--accent-strong); letter-spacing: -0.01em; }
@@ -539,7 +540,7 @@
   <div class="wrap">
     <p class="eyebrow">Profile</p>
     <h2 class="h2">A systems-minded engineer, fluent in modern AI</h2>
-    <p class="lede">Senior .NET Full Stack Developer with <strong>8+ years</strong> building and operating production enterprise systems for a national media organisation and the higher-education sector. Specialist in the full Microsoft stack (.NET Framework through .NET&nbsp;9), <strong>Clean Architecture and Domain-Driven Design</strong>, RESTful APIs, real-time systems with SignalR, and secure authentication including JWT, OTP, and RSA digital signing. Proven record of delivering platforms serving <strong>2,000+ concurrent users</strong>, embedding LLM and AI services into live editorial pipelines, and leading a <strong>zero-downtime legacy modernisation</strong> against a live production database. Comfortable owning a system end to end — architecture, data modelling, security, CI/CD, and production support.</p>
+    <p class="lede lede-wide">Senior .NET Full Stack Developer with 8+ years designing, building, and operating production systems for a national media organisation and the higher-education sector. Specialist in the full Microsoft stack, from .NET Framework through .NET&nbsp;9, with deep experience in <strong>Clean Architecture and Domain-Driven Design</strong>, RESTful APIs, real-time systems built on SignalR, and secure authentication spanning JWT, OTP, and RSA digital signing. Comfortable owning a system end to end — architecture, data modelling, security, CI/CD, and production support.</p>
 
     <div class="highlights">
       <article>
