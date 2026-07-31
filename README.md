@@ -11,29 +11,23 @@ requests. Deploys as-is to GitHub Pages.
 |---|---|
 | `index.html` | The whole site — markup, styles, and script inline |
 | `fonts/` | Self-hosted WOFF2 fonts (Source Serif 4, IBM Plex Sans, IBM Plex Mono) |
-| `Dimple-Saini-CV.txt` | ATS-friendly plain-text CV, linked from the Download CV buttons |
+| `Dimple-Saini-CV.pdf` | CV served by the Download CV buttons |
+| `Dimple-Saini-CV.docx` | Editable source of the CV (not linked from the site) |
 | `404.html` | Custom not-found page |
 | `robots.txt`, `sitemap.xml` | Search-engine crawl hints |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is, skipping Jekyll processing |
 
 ## Publishing to GitHub Pages
 
-1. In GitHub Desktop, click **Publish repository** (keep it **public** — private repos
-   need a paid plan for Pages).
-2. On github.com, open the repo → **Settings** → **Pages**.
+Repository: `DK2212/DimpleSaini` · Live URL: `https://dk2212.github.io/DimpleSaini/`
+
+1. **Make the repository public.** Pages will not run on a private repo without a paid
+   plan. Go to **Settings → General**, scroll to *Danger Zone*, choose
+   **Change repository visibility → Make public**, and confirm.
+2. Go to **Settings → Pages**.
 3. Under *Build and deployment*, set **Source** to `Deploy from a branch`, branch
    `main`, folder `/ (root)`, then **Save**.
-4. Wait ~1 minute. The site goes live at:
-   `https://YOUR-USERNAME.github.io/DimpleCV/`
-
-## Before you publish — replace the placeholder URL
-
-Three files contain `YOUR-USERNAME`. Swap in your real GitHub username so canonical
-tags and the sitemap point at the live site:
-
-- `index.html` — the `<link rel="canonical">` tag
-- `robots.txt` — the `Sitemap:` line
-- `sitemap.xml` — the `<loc>` element
+4. Wait ~1 minute, then load `https://dk2212.github.io/DimpleSaini/`.
 
 ## Using a custom domain (optional)
 
@@ -41,7 +35,7 @@ tags and the sitemap point at the live site:
    cost).
 2. Add a file named `CNAME` in this repo containing only the domain, e.g. `dimplesaini.dev`
 3. At your registrar, add a `CNAME` DNS record pointing `www` at
-   `YOUR-USERNAME.github.io`, plus `A` records for the apex domain to GitHub's four
+   `dk2212.github.io`, plus `A` records for the apex domain to GitHub's four
    Pages IPs (documented in GitHub's custom-domain guide).
 4. In **Settings → Pages**, enter the domain and tick **Enforce HTTPS**.
 

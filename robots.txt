@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://YOUR-USERNAME.github.io/DimpleCV/sitemap.xml
+Sitemap: https://dk2212.github.io/DimpleSaini/sitemap.xml

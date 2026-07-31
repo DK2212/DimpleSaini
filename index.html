@@ -4,9 +4,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Dimple Saini — Senior .NET Full Stack Developer</title>
-<meta name="description" content="Dimple Saini — Senior .NET Full Stack Developer with 8+ years building distributed enterprise systems, secure APIs, and AI-integrated automation platforms. Open to roles in the UK, Ireland, New Zealand and Australia." />
+<meta name="description" content="Dimple Saini — Senior .NET Full Stack Developer specialising in cloud, real-time and AI-integrated systems. 8+ years building production enterprise platforms. Open to roles in the UK, Ireland, New Zealand and Australia." />
 <meta name="author" content="Dimple Saini" />
-<link rel="canonical" href="https://YOUR-USERNAME.github.io/DimpleCV/" />
+<link rel="canonical" href="https://dk2212.github.io/DimpleSaini/" />
 
 <meta property="og:type" content="profile" />
 <meta property="og:title" content="Dimple Saini — Senior .NET Full Stack Developer" />
@@ -252,6 +252,10 @@
     margin-bottom: 0.8rem;
   }
   .hero h1 { font-size: clamp(2.5rem, 6.4vw, 4.1rem); }
+  .hero-specialism {
+    margin-top: 0.6rem; font-size: clamp(1.02rem, 1.5vw, 1.2rem);
+    color: var(--accent-strong); font-weight: 600; letter-spacing: 0.005em;
+  }
   .hero-tagline { max-width: 56ch; margin-top: 1.25rem; font-size: clamp(1.04rem, 1.4vw, 1.16rem); color: var(--ink-muted); }
   .hero-cta { margin-top: 1.9rem; display: flex; gap: 0.8rem; flex-wrap: wrap; }
   .btn {
@@ -302,6 +306,13 @@
   }
   .stat-label { margin-top: 0.4rem; font-size: 0.79rem; color: var(--ink-muted); }
 
+  /* ===== Career highlights ===== */
+  .highlights { display: grid; grid-template-columns: 1fr; gap: 1px; margin-top: 2rem; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+  @media (min-width: 820px) { .highlights { grid-template-columns: repeat(3, 1fr); } }
+  .highlights article { background: var(--bg-raised); padding: 1.25rem 1.3rem; display: flex; flex-direction: column; gap: 0.4rem; }
+  .highlight-stat { font-family: 'Source Serif 4', Georgia, serif; font-weight: 700; font-size: 1.18rem; color: var(--accent-strong); letter-spacing: -0.01em; }
+  .highlights p:not(.highlight-stat) { font-size: 0.91rem; color: var(--ink-muted); }
+
   /* ===== Practice areas ===== */
   .practice { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1.6rem; }
   @media (min-width: 800px) { .practice { grid-template-columns: repeat(3, 1fr); } }
@@ -340,6 +351,7 @@
   .role-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.9rem; }
   .role-title { font-size: 1.32rem; }
   .role-org { color: var(--ink-muted); font-size: 0.94rem; margin-top: 0.15rem; }
+  .role-context { color: var(--ink-muted); font-size: 0.82rem; margin-top: 0.1rem; opacity: 0.85; }
   .tag {
     font-size: 0.71rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
     padding: 0.3rem 0.64rem; border-radius: 999px; white-space: nowrap;
@@ -457,10 +469,11 @@
         <div class="hero-rule"></div>
         <p class="hero-kicker">Senior .NET Full Stack Developer</p>
         <h1>Dimple Saini</h1>
+        <p class="hero-specialism">Cloud, real-time &amp; AI-integrated systems</p>
         <p class="hero-tagline">I design and deliver distributed enterprise systems, secure APIs, and AI-integrated automation platforms — 8+ years turning legacy processes into production software that organisations run their operations on.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="mailto:dimplekumarsaini9@gmail.com">Get in touch</a>
-          <a class="btn btn-ghost" href="Dimple-Saini-CV.txt" download>Download CV</a>
+          <a class="btn btn-ghost" href="Dimple-Saini-CV.pdf" download="Dimple-Saini-CV.pdf">Download CV (PDF)</a>
           <a class="btn btn-ghost" href="#projects">View selected work</a>
         </div>
       </div>
@@ -487,6 +500,10 @@
           <div>
             <dt>Open to</dt>
             <dd>Relocation &amp; remote<span>UK · Ireland · New Zealand · Australia</span></dd>
+          </div>
+          <div>
+            <dt>Right to work</dt>
+            <dd>Indian national, based in India<span>Requires visa sponsorship (e.g. UK Skilled Worker)</span></dd>
           </div>
           <div>
             <dt>Education</dt>
@@ -522,7 +539,22 @@
   <div class="wrap">
     <p class="eyebrow">Profile</p>
     <h2 class="h2">A systems-minded engineer, fluent in modern AI</h2>
-    <p class="lede">Senior .NET Full Stack Developer with <strong>8+ years</strong> designing, building, and operating production-grade enterprise systems, distributed platforms, and AI-integrated automation pipelines. Deep expertise across the full .NET ecosystem (.NET Framework through .NET&nbsp;9), <strong>Clean Architecture and Domain-Driven Design</strong>, RESTful APIs, real-time systems with SignalR, and secure authentication including JWT, OTP, and RSA digital signing. Proven track record building systems supporting <strong>2,000+ concurrent users</strong>, integrating AI and LLM APIs into editorial workflows, leading <strong>zero-downtime legacy modernisations</strong>, and shipping CI/CD-automated deployments. Comfortable owning a system end to end — architecture, database design, security, deployment, and production support.</p>
+    <p class="lede">Senior .NET Full Stack Developer with <strong>8+ years</strong> building and operating production enterprise systems for a national media organisation and the higher-education sector. Specialist in the full Microsoft stack (.NET Framework through .NET&nbsp;9), <strong>Clean Architecture and Domain-Driven Design</strong>, RESTful APIs, real-time systems with SignalR, and secure authentication including JWT, OTP, and RSA digital signing. Proven record of delivering platforms serving <strong>2,000+ concurrent users</strong>, embedding LLM and AI services into live editorial pipelines, and leading a <strong>zero-downtime legacy modernisation</strong> against a live production database. Comfortable owning a system end to end — architecture, data modelling, security, CI/CD, and production support.</p>
+
+    <div class="highlights">
+      <article>
+        <p class="highlight-stat">Zero downtime</p>
+        <p>Migrated a legacy ASP.NET Web Forms platform to ASP.NET Core (.NET&nbsp;8) against the live production database — no schema fork, no outage.</p>
+      </article>
+      <article>
+        <p class="highlight-stat">2,000+ users</p>
+        <p>Optimised SQL Server queries and schema design to sustain concurrent load on live, public-facing election and analytics dashboards.</p>
+      </article>
+      <article>
+        <p class="highlight-stat">AI in the newsroom</p>
+        <p>Introduced AI-driven news processing and automated video generation into a national newsroom, materially reducing manual editorial effort.</p>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -597,6 +629,12 @@
       </div>
     </div>
     <div class="skillgroup">
+      <h3>Integrations</h3>
+      <div class="chips">
+        <span class="chip">YouTube Data API</span><span class="chip">Twitter/X API</span><span class="chip">SMS gateways</span><span class="chip">GPS APIs</span><span class="chip">RFID</span><span class="chip">Hardware (RAID / BMC / SMART)</span><span class="chip">WMI / Windows systems programming</span>
+      </div>
+    </div>
+    <div class="skillgroup">
       <h3>DevOps &amp; tooling</h3>
       <div class="chips">
         <span class="chip">GitHub Actions CI/CD</span><span class="chip">IIS deployment</span><span class="chip">Git</span><span class="chip">Swagger / OpenAPI</span><span class="chip">Postman</span><span class="chip">Serilog</span>
@@ -617,6 +655,7 @@
           <div>
             <h3 class="role-title">Zee Media Corporation Ltd</h3>
             <p class="role-org">Senior .NET Full Stack Developer</p>
+            <p class="role-context">National broadcast media group · India</p>
           </div>
           <div style="display:flex; gap:0.5rem; align-items:center;">
             <span class="tag tag-now">Current</span>
@@ -633,8 +672,8 @@
           <li>Designed an internal application gateway with reverse-proxy middleware, JWT authentication, a SignalR real-time governance dashboard, and device fingerprinting.</li>
           <li>Led a <strong>zero-downtime migration</strong> of a legacy ASP.NET Web Forms system to ASP.NET Core (.NET 8) against the live production database, using an additive-only schema strategy with a full audit trail.</li>
           <li>Established GitHub Actions CI/CD pipelines for automated build and deployment.</li>
-          <li>Built secure OTP and RSA digital-signing workflows for a pass-verification platform, with an admin monitoring dashboard.</li>
           <li>Optimised SQL Server queries and schema design, improving response times for systems serving <strong>2,000+ concurrent users</strong>.</li>
+          <li>Delivered further internal enterprise systems — Exit Management (full-and-final settlement), Asset Management, an SMS automation platform, and an event pass-verification system secured with OTP authentication and RSA digital signing.</li>
         </ul>
       </article>
 
@@ -643,15 +682,15 @@
           <div>
             <h3 class="role-title">Vardhman Infotech</h3>
             <p class="role-org">.NET Developer</p>
+            <p class="role-context">Education technology · India</p>
           </div>
           <div><span class="tag tag-date">Oct 2017 — Dec 2021</span></div>
         </div>
         <ul>
-          <li>Led digitisation and modernisation of university result and academic-record systems.</li>
-          <li>Developed academic certificate generation and verification portals used by university stakeholders.</li>
-          <li>Built student result-processing systems handling large datasets, including entrance-exam result automation.</li>
-          <li>Migrated legacy applications to modern .NET development standards.</li>
-          <li>Designed secure document management and acknowledgment systems.</li>
+          <li>Led the digitisation of university result and academic-record systems, migrating legacy applications and paper-based processes onto modern .NET web platforms and improved coding standards.</li>
+          <li>Developed academic certificate generation and online verification portals used across university stakeholder groups.</li>
+          <li>Built student result-processing and entrance-exam automation systems handling large institutional datasets.</li>
+          <li>Designed secure document management and acknowledgement systems for sensitive academic records.</li>
         </ul>
       </article>
     </div>
@@ -753,7 +792,7 @@
       <div class="contact-actions">
         <a class="btn btn-primary" href="mailto:dimplekumarsaini9@gmail.com">dimplekumarsaini9@gmail.com</a>
         <a class="btn btn-ghost" href="tel:+917206458740">+91 72064 58740</a>
-        <a class="btn btn-ghost" href="Dimple-Saini-CV.txt" download>Download CV</a>
+        <a class="btn btn-ghost" href="Dimple-Saini-CV.pdf" download="Dimple-Saini-CV.pdf">Download CV (PDF)</a>
       </div>
     </div>
   </div>
