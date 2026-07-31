@@ -233,7 +233,7 @@
   }
   .h2 { font-size: clamp(1.55rem, 2.8vw, 2.05rem); margin-bottom: 0.9rem; }
   .lede { max-width: 68ch; font-size: 1.04rem; color: var(--ink-muted); }
-  .lede-wide { max-width: 76ch; }
+  .lede-wide { max-width: none; text-align: justify; text-justify: inter-word; hyphens: auto; }
   .lede strong { color: var(--ink); font-weight: 600; }
   .reveal { opacity: 0; transform: translateY(12px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.in { opacity: 1; transform: none; }
@@ -626,13 +626,19 @@
     <div class="skillgroup">
       <h3>Security</h3>
       <div class="chips">
-        <span class="chip">JWT</span><span class="chip">OTP authentication</span><span class="chip">RSA digital signing</span><span class="chip">BCrypt</span><span class="chip">API-key auth</span><span class="chip">IP whitelisting</span><span class="chip">Replay-attack protection</span><span class="chip">RBAC</span><span class="chip">Device fingerprinting</span>
+        <span class="chip">JWT</span><span class="chip">OTP authentication</span><span class="chip">RSA digital signing</span><span class="chip">TOTP 2FA</span><span class="chip">BCrypt</span><span class="chip">API-key auth</span><span class="chip">IP whitelisting</span><span class="chip">Replay-attack protection</span><span class="chip">RBAC</span><span class="chip">Device fingerprinting</span><span class="chip">Rate limiting</span><span class="chip">Security-header hardening (CSP, HSTS)</span><span class="chip">Application security auditing</span>
       </div>
     </div>
     <div class="skillgroup">
       <h3>Integrations</h3>
       <div class="chips">
         <span class="chip">YouTube Data API</span><span class="chip">Twitter/X API</span><span class="chip">SMS gateways</span><span class="chip">GPS APIs</span><span class="chip">RFID</span><span class="chip">Hardware (RAID / BMC / SMART)</span><span class="chip">WMI / Windows systems programming</span>
+      </div>
+    </div>
+    <div class="skillgroup">
+      <h3>Desktop &amp; systems</h3>
+      <div class="chips">
+        <span class="chip">WPF / MVVM</span><span class="chip">Digital forensics &amp; file recovery</span><span class="chip">NTFS / FAT32 / exFAT parsing</span><span class="chip">Volume Shadow Copy</span><span class="chip">ETL pipeline design</span>
       </div>
     </div>
     <div class="skillgroup">
@@ -665,8 +671,8 @@
         </div>
         <ul>
           <li>Designed <strong>real-time election-data automation systems</strong> powering live public-facing broadcast dashboards.</li>
-          <li>Built live social media analytics dashboards integrating YouTube and Twitter/X APIs on a distributed collector plus stream-health service architecture.</li>
-          <li>Developed AI-based news processing and editorial content workflows using the OpenAI API, and integrated AI video-generation APIs for automated media production.</li>
+          <li>Built live social media analytics dashboards integrating YouTube and Twitter/X APIs on a distributed collector plus stream-health service architecture, including a Windows Service collector with rotating API-key pools to manage YouTube Data API quota limits.</li>
+          <li>Designed a persona-based AI news-anchor platform (OpenAI API) with prompt versioning and memory services, hardened with tiered rate limiting, full security-header middleware (CSP, HSTS), and a two-tier LLM cost strategy — a lightweight model for recall, a stronger model for persona consistency — and integrated AI video-generation APIs for automated media production.</li>
           <li>Implemented speech-to-text transcription and voice-recognition systems for newsroom and teleprompter use.</li>
           <li>Architected a Clean Architecture RFID warehouse inventory API on .NET 9 with <strong>replay-attack protection, API-key authentication, and IP whitelisting</strong>.</li>
           <li>Built an enterprise hardware monitoring platform on a distributed Collector → Server → API architecture, integrating RAID, BMC, and SMART tooling, with 35+ versioned schema migrations and interactive topology visualisation.</li>
@@ -674,7 +680,8 @@
           <li>Led a <strong>zero-downtime migration</strong> of a legacy ASP.NET Web Forms system to ASP.NET Core (.NET 8) against the live production database, using an additive-only schema strategy with a full audit trail.</li>
           <li>Established GitHub Actions CI/CD pipelines for automated build and deployment.</li>
           <li>Optimised SQL Server queries and schema design, improving response times for systems serving <strong>2,000+ concurrent users</strong>.</li>
-          <li>Delivered further internal enterprise systems — Exit Management (full-and-final settlement), Asset Management, an SMS automation platform, and an event pass-verification system secured with OTP authentication and RSA digital signing.</li>
+          <li>Delivered further internal enterprise systems — Exit Management (full-and-final settlement), an Asset Management platform, and an SMS automation system.</li>
+          <li>Built a secure event/pass-verification platform (.NET 8) issuing cryptographically signed QR passes with OTP-based registrant verification and RSA digital signing; the verification endpoint validates each signature and tracks scan counts to flag reused or duplicated passes, with an admin monitoring dashboard.</li>
         </ul>
       </article>
 
@@ -747,6 +754,34 @@
         <p>Nomination → review → winner → certificate workflow engine for company-wide employee awards, driven by a formal PRD and multi-role approval flow.</p>
         <p class="card-metric">Automated build &amp; deploy pipeline</p>
         <div class="chips"><span class="chip">ASP.NET Core</span><span class="chip">GitHub Actions</span></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><h4>SecureScanner</h4><span class="tag tag-prod">Production</span></div>
+        <p>Dynamic application security testing (DAST) platform with 31 pluggable scanner modules — SQL injection (including blind and out-of-band), SSRF, DOM XSS, JWT and TLS analysis, GraphQL introspection, and CVE lookup via the NVD API.</p>
+        <p class="card-metric">Nuclei-style YAML templates · TOTP 2FA admin auth</p>
+        <div class="chips"><span class="chip">.NET 9</span><span class="chip">React / TypeScript</span><span class="chip">SQL Server</span></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><h4>SSD Data Recovery Pro</h4><span class="tag tag-prod">Production</span></div>
+        <p>Windows desktop recovery engine combining NTFS/FAT32/exFAT filesystem parsing, signature-based raw-disk file carving, and Volume Shadow Copy recovery, paired with a licensing backend.</p>
+        <p class="card-metric">Signed offline license validation · fraud detection</p>
+        <div class="chips"><span class="chip">.NET 9</span><span class="chip">WPF / MVVM</span><span class="chip">ASP.NET Core</span></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><h4>NetFlash</h4><span class="tag tag-prod">Production</span></div>
+        <p>Cross-platform enterprise alert broadcast system reaching Windows and macOS desktops org-wide, targetable by IP range, department, or machine list, with IIS/GPO and Jamf MDM deployment tooling.</p>
+        <p class="card-metric">37-point security audit self-conducted &amp; remediated</p>
+        <div class="chips"><span class="chip">.NET 8</span><span class="chip">SignalR</span><span class="chip">Windows Service</span></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><h4>WsusPortal</h4><span class="tag tag-prod">Production</span></div>
+        <p>Enterprise WSUS patch-compliance dashboard with a compliance heatmap and dynamic report builder, backed by a scheduled ETL service that synchronizes and archives update-compliance data.</p>
+        <p class="card-metric">Compliance heatmap · scheduled ETL pipeline</p>
+        <div class="chips"><span class="chip">.NET 8</span><span class="chip">EF Core</span><span class="chip">SQL Server</span></div>
       </article>
     </div>
 
